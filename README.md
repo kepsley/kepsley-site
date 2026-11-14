@@ -3,7 +3,7 @@
 Independent public website for Kepsley (formerly Linsora).
 
 - Repository: git@github.com:kepsley/kepsley-site.git
-- Intended custom domain: https://kepsley.com/
+- Intended custom domain: https://www.kepsley.com/
 - English: /, /privacy/, /support/
 - Simplified Chinese: /zh/, /zh/privacy/, /zh/support/
 - Japanese: /ja/, /ja/privacy/, /ja/support/
@@ -21,7 +21,7 @@ python3 -m http.server 8771 --bind 127.0.0.1 --directory site
 
 The independent workflow deploys `site/` on pushes to main or manual dispatch. Enable Settings → Pages → GitHub Actions in **kepsley/kepsley-site**. Configure the custom domain there; Actions deployments do not use a CNAME file as their configuration source.
 
-Before switching App links, verify domain ownership, DNS, the HTTPS certificate and all nine public pages. Configure the apex A records using GitHub Pages documentation; optionally point www to kepsley.github.io. Do not change MX or unrelated records. privacy/support subdomains are deferred.
+Before switching App links, verify domain ownership, DNS, the HTTPS certificate and all nine public pages. Set the Pages custom domain to `www.kepsley.com`. In Name.com DNS, set host `www`, type `CNAME`, target `kepsley.github.io`. Apex forwarding is optional and requires its own configuration. Do not change MX or unrelated records. privacy/support subdomains are deferred.
 
 Source upload is not evidence of a live custom domain. DNS and Pages configuration require separate verification.
 
