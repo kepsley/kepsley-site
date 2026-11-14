@@ -1,0 +1,250 @@
+{
+  "en": {
+    "privacy": {
+      "title": "Privacy policy",
+      "sections": [
+        {
+          "heading": "Operator and scope",
+          "html": "<p>Kepsley is developed and operated by tonyzh. Contact otsgame@yahoo.com. This update covers local recording, offline transcription, read aloud, optional cloud text services and Pro purchases. Effective 14 November 2026. Feature availability depends on the installed app version.</p>"
+        },
+        {
+          "heading": "Local audio and speech",
+          "html": "<p>Recording starts only when you initiate it and grant microphone access. Recordings, imported copies, titles, text versions and speaker analysis stay in app storage. Bundled models transcribe Mandarin, English and Japanese locally; audio and speaker features are not sent to AI servers. Speaker labels are estimates within a single recording, not verified identities. System read aloud uses available device voices, does not send text to AI services, and does not save synthesized audio. Lock-screen playback shows the recording title and text type, not the text.</p>"
+        },
+        {
+          "heading": "Optional cloud text",
+          "html": "<p>Only after your confirmation, proofreading and summaries send the selected text to your configured service. Proofreading also sends your explicitly saved terminology profile. The app shows the receiving server, model, data and possible charges before sending. Official OpenAI/DeepSeek and user-configured HTTPS OpenAI/Claude-compatible services are supported; operators determine their retention and charges. Requests use your credential and expose normal connection information; content may be linked to your provider account. There is no developer relay and no promise of zero retention. Cancellation cannot retract sent data or incurred charges.</p>"
+        },
+        {
+          "heading": "Keys and configuration sharing",
+          "html": "<p>API keys are stored in this device’s Keychain. File, JSON and QR configuration sharing is an explicit action and includes selected keys in readable form without a password. Recipients can use them and incur charges. No recordings or text history are included. Import requires preview and confirmation; merely saving or importing configuration does not contact the provider. Legacy encrypted files require their password. Temporary shared files are protected and cleaned after use or next launch; external copies cannot be recalled. Clipboard copying is explicit and configuration copies are local-only with short expiration.</p>"
+        },
+        {
+          "heading": "Permissions and purchases",
+          "html": "<p>The microphone is used for recording. Camera access is requested only for configuration QR scanning; QR images use the system photo picker. No contacts or location are required. Apple processes Pro purchases and offer-code redemption; the app verifies transactions and does not receive payment card details. Optional provider fees are separate from Pro. There are no Kepsley accounts, ads, analytics SDKs or tracking.</p>"
+        },
+        {
+          "heading": "Storage, deletion and exports",
+          "html": "<p>Files use iOS protection allowing access after the first unlock following a restart, supporting locked recording and playback; this is not a separate vault. Backup-exclusion flags are used without guaranteeing exclusion from all backups. Short recording segments and checkpoints support recovery; export creates a temporary M4A copy requiring additional space. Deleting a recording removes related local AI/speaker data; deleting source text also deletes dependent versions. Deletion is not forensic secure erasure and cannot recall provider or recipient copies. There is no app-account cloud sync. Uninstalling, device loss or damage can remove local data permanently.</p>"
+        },
+        {
+          "heading": "Website visits",
+          "html": "<p>This website is published through GitHub Pages. GitHub and its infrastructure providers may process website connection information under their privacy policies. Browsers send connection and request information such as IP address, path and browser information to hosting infrastructure. Server error logs may contain request information. The site has no app analytics, advertising or submission forms. This policy does not assume server logging is disabled.</p>"
+        },
+        {
+          "heading": "Support and your choices",
+          "html": "<p>Support is through Yahoo Mail at otsgame@yahoo.com. The in-app feedback feature copies your description and app/system versions; it does not automatically send or attach recordings. Email correspondence is retained for 6 months after the last message and then deleted from the mailbox. Email to request access or earlier deletion; requests are handled within 30 days. The operator cannot remotely recover local recordings. Stop processing, revoke permissions or delete local data as needed. Inform participants before recording and verify AI output.</p>"
+        },
+        {
+          "heading": "iCloud backup and restore",
+          "html": "<p>Pro offers manual backup and optional automatic backup to your private iCloud database. Backups include saved recordings, tags and AI results, plus optional non-sensitive settings; API keys are excluded. Automatic backup is off by default. Enabling it allows Wi-Fi and cellular uploads using your own iCloud storage; additional storage is not included. Background scheduling depends on iOS. Restores are always manual, including on another device. Deleting local recordings does not delete cloud backups. Backup state errors may stop transfers to protect existing data. This is backup, not automatic cross-device synchronization.</p>"
+        },
+        {
+          "heading": "AI processing queue",
+          "html": "<p>Confirmed AI tasks run one at a time, with up to 10 waiting tasks. Recording can continue while AI processes saved recordings; resource limits may pause AI. Reopen the app and manually continue a suspended queue. Cancelling does not undo data already sent or provider charges. Retained progress and source text remain available where saved; check each task’s status before retrying.</p>"
+        }
+      ]
+    },
+    "support": {
+      "title": "Help and support",
+      "sections": [
+        {
+          "heading": "Free and Pro",
+          "html": "<p>Recording, import, playback, export and access to existing text are free. Pro is a one-time purchase at the price displayed by Apple. It unlocks offline transcription, speaker labels, AI proofreading, summaries, personal terminology, AI naming, and manual or optional automatic iCloud backup. Cloud AI uses your own API key and is charged separately by the provider.</p>"
+        },
+        {
+          "heading": "Transcribe and review",
+          "html": "<p>Save or import audio, open Transcript and Summary, select Mandarin, English or Japanese, then Transcribe. No API key is needed for local recognition. Check estimated speaker labels and uncertain speech. Edit as New Version preserves the original. History groups related versions; expand All Versions. Before summarizing, choose the exact text source. Partial text is usable with an incompleteness warning.</p>"
+        },
+        {
+          "heading": "Listen to text",
+          "html": "<p>Open a transcript, corrected text or summary and choose Read Aloud. You can also read a selected speaker. Available system voices are used; there is no cloud voice fallback. Pause, resume and stop from the app or playback controls. Recording stops read aloud. Calls or headset disconnection may pause playback; resume manually.</p>"
+        },
+        {
+          "heading": "AI configuration",
+          "html": "<p>Use your own valid text-service key and supported model. Test Interface sends only fixed test text after confirmation and may cost money; it does not test audio transcription. Review the destination before sending private text. File/JSON/QR configuration sharing includes readable keys; send only to trusted recipients. Revoke a shared key through its provider if needed.</p>"
+        },
+        {
+          "heading": "Long recordings and interruptions",
+          "html": "<p>Start recording in the foreground. Available inputs can recover automatically; phone/Siri interruptions resume only if the system permits and you have not cancelled. Gaps are possible. Saved recordings retain short segments; closed segments compress when possible. Stop does not merge the full recording. Export creates one M4A and needs extra storage. Checkpoints are local recovery, not an external backup. Phone/WeChat call audio capture and live translation are not supported.</p>"
+        },
+        {
+          "heading": "Power, background and recovery",
+          "html": "<p>Transcription can consume significant battery. Foreground transcription/proofreading/summary keeps the screen awake; connect power for long tasks. iOS controls background processing. If paused or expired, return and continue from saved progress; unfinished work may repeat. Force-quitting can interrupt tasks. Cloud requests with unknown outcomes may already be charged. Preserve the app and drafts after a failure, free other space, and retry; do not uninstall to recover data.</p>"
+        },
+        {
+          "heading": "Contact",
+          "html": "<p>Email otsgame@yahoo.com with app/iOS version, device/headset model, steps and expected/actual result. Do not send passwords or unnecessary recordings. Existing privacy terms for correspondence apply.</p>"
+        },
+        {
+          "heading": "iCloud backup and restore",
+          "html": "<p>Pro offers manual backup and optional automatic backup to your private iCloud database. Backups include saved recordings, tags and AI results, plus optional non-sensitive settings; API keys are excluded. Automatic backup is off by default. Enabling it allows Wi-Fi and cellular uploads using your own iCloud storage; additional storage is not included. Background scheduling depends on iOS. Restores are always manual, including on another device. Deleting local recordings does not delete cloud backups. Backup state errors may stop transfers to protect existing data. This is backup, not automatic cross-device synchronization.</p>"
+        },
+        {
+          "heading": "AI processing queue",
+          "html": "<p>Confirmed AI tasks run one at a time, with up to 10 waiting tasks. Recording can continue while AI processes saved recordings; resource limits may pause AI. Reopen the app and manually continue a suspended queue. Cancelling does not undo data already sent or provider charges. Retained progress and source text remain available where saved; check each task’s status before retrying.</p>"
+        }
+      ]
+    }
+  },
+  "zh-Hans": {
+    "privacy": {
+      "title": "隐私政策",
+      "sections": [
+        {
+          "heading": "运营者与范围",
+          "html": "<p>Kepsley 由 tonyzh 开发和运营，联系邮箱 otsgame@yahoo.com。本次更新涵盖本地录音、离线转写、系统朗读、可选云端文字处理及 Pro 内购。生效日期：2026 年 11 月 14 日。具体功能取决于安装的 App 版本。</p>"
+        },
+        {
+          "heading": "本机音频和朗读",
+          "html": "<p>仅在你主动开始并授权后录音。录音、导入副本、名称、文字版本及分人数据保存在应用内。内置模型在本机处理普通话、英语和日语，音频与人物声音特征不发送给 AI 服务器；人物标签仅为单条录音内的估计，不是身份认证。朗读使用设备可用系统声音，不向 AI 服务发送正文，也不保存合成语音文件；锁屏只显示录音标题及文字类型。</p>"
+        },
+        {
+          "heading": "可选云端文字服务",
+          "html": "<p>只有经确认后，校对和总结才向你配置的服务发送所选文字；校对同时发送主动保存的术语配置。界面说明实际服务器、模型、内容及可能费用。支持 OpenAI、DeepSeek 和用户配置的 HTTPS OpenAI／Claude 兼容服务。请求使用你的 Key 并传输正常网络连接信息，内容可能关联服务商账号。服务商决定保留方式和收费，没有开发者中转，也不保证零保留。取消不能撤回已发送内容或费用。</p>"
+        },
+        {
+          "heading": "Key 与配置分享",
+          "html": "<p>Key 保存在本机 Keychain。文件、JSON、二维码分享由你主动发起，无密码，包含所选明文 Key；接收者可以使用并产生费用，不含录音或文字历史。导入须预览确认，保存或导入配置本身不联系服务商；旧加密文件仍须密码。临时副本受系统保护并在完成或下次启动清理；外部副本无法撤回。复制须用户点击，配置剪贴板仅本机使用并短期过期。</p>"
+        },
+        {
+          "heading": "权限和内购",
+          "html": "<p>麦克风用于录音；仅在主动扫码时请求相机，二维码选图通过系统照片选择器。不需要联系人和位置。Apple 处理 Pro 购买及官方兑换，App 验证交易但不接收银行卡信息。云端 API 费用不包含在 Pro 价格中。没有 Kepsley 账号、广告、分析 SDK 或跟踪。</p>"
+        },
+        {
+          "heading": "保存、删除和导出",
+          "html": "<p>使用重启后首次解锁可访问的 iOS 文件保护，以支持锁屏录音和播放；不是独立保险箱。设置备份排除但不保证绝不进入任何系统备份。录音片段及检查点用于本机恢复，导出单个 M4A 需要临时空间。删除录音会清理相关本地 AI 和分人数据；删除源文字会清理依赖版本。删除不是安全擦除，不能撤回服务商或接收者副本。无账号云同步，卸载、设备丢失或损坏可能永久丢失数据。</p>"
+        },
+        {
+          "heading": "网站访问",
+          "html": "<p>网站通过 GitHub Pages 发布，GitHub 及其基础设施提供方可能依其隐私政策处理网站连接信息。浏览器会向托管基础设施发送 IP、路径、浏览器信息等，错误日志可能包含请求信息。网站不提供 App 分析、广告或提交表单；不假定服务器日志已关闭。</p>"
+        },
+        {
+          "heading": "反馈与选择",
+          "html": "<p>支持邮箱使用 Yahoo Mail：otsgame@yahoo.com。App 内反馈仅复制问题及应用／系统版本，不自动发送或附加录音。咨询邮件自最后一次通信起保留 6 个月，之后从邮箱删除；可来信申请查阅或提前删除，30 天内处理。运营者不能远程恢复本机录音。可停止处理、撤销权限或删除内容；录音前告知参与者，并核对 AI 输出。</p>"
+        },
+        {
+          "heading": "iCloud 备份与恢复",
+          "html": "<p>Pro 提供手动备份和可选自动备份，数据存入你的 iCloud 私有数据库。备份包含已保存录音、标签、AI 结果及可选的非敏感设置，不包含 API Key。自动备份默认关闭；启用后允许通过 Wi-Fi 和蜂窝网络上传，占用你自己的 iCloud 空间，不赠送额外容量。后台执行时间由 iOS 调度。恢复始终需要手动操作，包括在其他设备恢复。本地删除不会删除云端备份。备份状态异常时可能停止传输以保护已有数据。这是备份功能，不是自动跨设备同步。</p>"
+        },
+        {
+          "heading": "AI 处理队列",
+          "html": "<p>已确认的 AI 任务逐个执行，最多可有 10 个等待任务。AI 处理已保存录音时可以继续录音；资源限制可能暂停 AI。重新打开 App 后请手动继续暂停的队列。取消不会撤回已发送的数据或已发生的服务商费用；已保存的进度和原文仍可使用，重试前请查看任务状态。</p>"
+        }
+      ]
+    },
+    "support": {
+      "title": "帮助与支持",
+      "sections": [
+        {
+          "heading": "免费与 Pro",
+          "html": "<p>录音、导入、播放、导出及已有文字访问免费。Pro 一次买断，价格以 Apple 购买页面为准，解锁离线转写、人物标签、AI 校对、总结、个人术语、AI 命名，以及手动和可选自动 iCloud 备份。云端 AI 使用你自己的 API Key，由服务商另行计费。</p>"
+        },
+        {
+          "heading": "提取与版本",
+          "html": "<p>保存或导入录音后打开文字与总结，选择普通话、英语或日语，点击提取文字。本地转写不需要 Key。核对人物标签及不确定发言；编辑另存保留底稿。历史按同次提取分组，展开全部版本查看。生成总结前选择确切文字版本，部分文字也可处理并显示不完整提示。</p>"
+        },
+        {
+          "heading": "朗读文字",
+          "html": "<p>打开原文、校对稿或总结后选择朗读，也可朗读指定人物。使用设备可用的系统声音，不转为云端语音。支持在 App 或系统播放控件中暂停、继续和停止。开始录音会停止朗读；来电或耳机断开可能暂停播放，请手动继续。</p>"
+        },
+        {
+          "heading": "AI 设置",
+          "html": "<p>填写自己的有效文字服务 Key 与受支持模型。测试接口仅在确认后发送固定短文字，可能收费，不验证音频转写。发送私人内容前核对接收服务器。文件／JSON／二维码分享含明文 Key，仅交给可信任接收者；需要时到服务商撤销 Key。</p>"
+        },
+        {
+          "heading": "长录音和中断",
+          "html": "<p>在前台开始录音。输入变化可尝试恢复，来电或 Siri 后仅在系统允许且未取消时续录，可能存在缺口。长录音分段保存，允许时逐段压缩，停止不合并全文件；导出单个 M4A 需要额外空间。本机检查点不是外部备份。不支持电话／微信双方通话录音或实时翻译。</p>"
+        },
+        {
+          "heading": "耗电与恢复",
+          "html": "<p>转写明显耗电，前台提取／校对／总结保持常亮，长任务建议接电。后台由 iOS 控制，暂停或到期后返回从已保存进度继续，未完成部分可能重做。强退可能中断；状态未知的云端请求可能已经计费。失败后保留 App 和草稿、释放其他空间再试，不要通过卸载来恢复。</p>"
+        },
+        {
+          "heading": "联系支持",
+          "html": "<p>联系 otsgame@yahoo.com，提供 App／iOS 版本、机型／耳机、步骤及预期／实际结果。不要发送密码或不必要的录音。邮件保留和删除沿用隐私政策。</p>"
+        },
+        {
+          "heading": "iCloud 备份与恢复",
+          "html": "<p>Pro 提供手动备份和可选自动备份，数据存入你的 iCloud 私有数据库。备份包含已保存录音、标签、AI 结果及可选的非敏感设置，不包含 API Key。自动备份默认关闭；启用后允许通过 Wi-Fi 和蜂窝网络上传，占用你自己的 iCloud 空间，不赠送额外容量。后台执行时间由 iOS 调度。恢复始终需要手动操作，包括在其他设备恢复。本地删除不会删除云端备份。备份状态异常时可能停止传输以保护已有数据。这是备份功能，不是自动跨设备同步。</p>"
+        },
+        {
+          "heading": "AI 处理队列",
+          "html": "<p>已确认的 AI 任务逐个执行，最多可有 10 个等待任务。AI 处理已保存录音时可以继续录音；资源限制可能暂停 AI。重新打开 App 后请手动继续暂停的队列。取消不会撤回已发送的数据或已发生的服务商费用；已保存的进度和原文仍可使用，重试前请查看任务状态。</p>"
+        }
+      ]
+    }
+  },
+  "ja": {
+    "privacy": {
+      "title": "プライバシーポリシー",
+      "sections": [
+        {
+          "heading": "運営者",
+          "html": "<p>Kepsleyはtonyzhが開発・運営しています。連絡先はotsgame@yahoo.comです。本書は録音、端末内文字起こし、読み上げ、任意のクラウド処理とPro購入を対象とし、2026年11月14日から適用されます。機能の利用可否はインストールした版により異なります。</p>"
+        },
+        {
+          "heading": "端末内のデータ",
+          "html": "<p>録音は利用者の操作とマイク許可で開始します。録音、取り込んだ音声、名前、テキスト履歴、話者分析は端末内に保存されます。内蔵モデルは日本語、英語、中国語を処理し、音声や声の特徴をAIサーバーへ送りません。話者ラベルは同じ録音内の推定で、本人確認ではありません。読み上げは利用可能なシステム音声を使い、AIへ文章を送信せず、合成音声ファイルも保存しません。ロック画面には録音名とテキストの種類のみ表示します。</p>"
+        },
+        {
+          "heading": "任意のクラウドAI",
+          "html": "<p>校正と要約は確認後に選択したテキストを設定先へ送ります。校正には明示的に保存した個人用語も含まれます。送信先、モデル、内容、料金を確認できます。OpenAI、DeepSeek、ユーザー設定のHTTPS OpenAI／Claude互換サービスを利用でき、保持期間や料金は各運営者が定めます。APIキーや通常の接続情報が使われ、提供者のアカウントと関連付けられる場合があります。開発者の中継サーバーはありません。保存しない保証はなく、キャンセルで送信済みデータや料金を取り消せません。</p>"
+        },
+        {
+          "heading": "設定共有と権限",
+          "html": "<p>APIキーは端末のKeychainに保存します。明示的なファイル／JSON／QR共有には選択した平文キーが含まれ、受信者が料金を発生させる場合があります。録音や履歴は含めず、読み込み前に確認します。旧暗号化ファイルはパスワードが必要です。外部コピーは撤回できません。カメラは設定QRの読み取り時のみ要求し、写真はシステム選択画面を利用します。連絡先や位置情報は不要です。コピー操作は明示的で、設定のクリップボードには端末限定・短期有効期限を設定します。</p>"
+        },
+        {
+          "heading": "購入と保存",
+          "html": "<p>AppleがPro購入とコード引き換えを処理します。アプリは取引を検証しますがカード情報は受け取りません。外部API料金は別途です。Kepsleyアカウント、広告、解析SDK、追跡はありません。再起動後の初回ロック解除以降アクセス可能なiOSファイル保護を使い、独立した保管庫ではありません。バックアップ除外を設定しますが完全な除外を保証しません。録音削除で関連AI・話者データを削除し、元テキストの削除は依存版も削除します。安全消去ではなく、外部サービスや受信者のコピーは撤回できません。アンインストールや端末紛失でデータが失われる場合があります。</p>"
+        },
+        {
+          "heading": "サイトとサポート",
+          "html": "<p>サイトはGitHub Pagesで公開され、GitHubとそのインフラ提供者のプライバシーポリシーに従って接続情報が処理される場合があります。接続先はIP、パス、ブラウザー情報などを受け取り、エラーログに記録する場合があります。ログ無効化は保証しません。広告、アプリ解析、送信フォームはありません。サポートはYahoo Mailのotsgame@yahoo.comです。アプリのフィードバックは説明とバージョン情報をコピーするだけで自動送信しません。メールは最後の通信から6か月保持し、その後メールボックスから削除します。閲覧や早期削除の申請はメールで受け付け、30日以内に対応します。運営者は端末の録音を遠隔復元できません。録音前に参加者へ知らせ、AI出力を確認してください。</p>"
+        },
+        {
+          "heading": "iCloudバックアップと復元",
+          "html": "<p>ProではiCloudのプライベートデータベースへの手動バックアップと任意の自動バックアップを利用できます。保存済み録音、タグ、AI結果、任意の機密性のない設定を含み、APIキーは含みません。自動バックアップは初期状態では無効です。有効にするとWi-Fiとモバイル通信でアップロードし、ご自身のiCloud容量を使用します。追加容量は含まれません。バックグラウンドの実行時期はiOSが決定します。別の端末を含め、復元は常に手動です。端末内の削除ではクラウドバックアップは削除されません。状態に異常がある場合、既存データを保護するため転送を停止することがあります。自動的な端末間同期ではありません。</p>"
+        },
+        {
+          "heading": "AI処理キュー",
+          "html": "<p>確認済みのAIタスクを一件ずつ実行し、最大10件を待機できます。保存済み録音のAI処理中も録音できますが、リソース制限によってAIが一時停止する場合があります。アプリを再度開いた後、停止中のキューは手動で再開してください。キャンセルしても送信済みデータや発生した料金は取り消せません。保存済みの進捗と原文は保持されます。再試行前に状態を確認してください。</p>"
+        }
+      ]
+    },
+    "support": {
+      "title": "ヘルプとサポート",
+      "sections": [
+        {
+          "heading": "無料とPro",
+          "html": "<p>録音、取り込み、再生、書き出し、既存テキストへのアクセスは無料です。ProはAppleの購入画面に表示される価格の買い切りで、端末内文字起こし、話者ラベル、AI校正、要約、個人用語、AI命名、手動および任意の自動iCloudバックアップを利用できます。クラウドAIはご自身のAPIキーを使用し、サービス提供者が別途課金します。</p>"
+        },
+        {
+          "heading": "文字起こしと履歴",
+          "html": "<p>音声を保存または取り込み、テキスト画面で日本語、英語、中国語を選択して文字起こしを開始します。ローカル処理にAPIキーは不要です。話者と不確かな発言を確認し、編集は新しい版に保存します。関連する校正や要約は同じ履歴カードにまとまり、すべてのバージョンを展開できます。要約前に元テキストの版を選択します。</p>"
+        },
+        {
+          "heading": "読み上げ",
+          "html": "<p>原文、校正済みテキスト、要約を開いて読み上げを選びます。特定の話者だけを読み上げることもできます。利用可能なシステム音声を使用し、クラウド音声には切り替えません。アプリやシステムの再生操作で一時停止・再開・停止できます。録音開始時は読み上げを停止します。通話やヘッドセット切断で停止した場合は手動で再開してください。</p>"
+        },
+        {
+          "heading": "設定と処理",
+          "html": "<p>文字サービスには自分の有効なキーと対応モデルを設定してください。接続テストは確認後に固定文字のみを送信し、料金がかかる場合があります。共有設定は平文キーを含むため、信頼できる相手にのみ渡してください。長時間の処理は電池を多く消費します。前面処理では画面を点灯し続けますが、バックグラウンドはiOSが制御します。停止した処理は保存済み進捗から手動再開し、未完了の有料リクエストには重複料金の可能性があります。</p>"
+        },
+        {
+          "heading": "録音の制限と連絡",
+          "html": "<p>長い録音は分割保存し、単一M4Aの書き出しには追加容量が必要です。中断復帰にはシステム許可が必要で、欠落が生じる場合があります。電話／WeChatの双方通話録音やリアルタイム翻訳には対応しません。失敗時はアプリや下書きを保持してください。問い合わせはotsgame@yahoo.comへ、端末・OS・アプリ版と再現手順を送り、パスワードや不要な録音は送らないでください。</p>"
+        },
+        {
+          "heading": "iCloudバックアップと復元",
+          "html": "<p>ProではiCloudのプライベートデータベースへの手動バックアップと任意の自動バックアップを利用できます。保存済み録音、タグ、AI結果、任意の機密性のない設定を含み、APIキーは含みません。自動バックアップは初期状態では無効です。有効にするとWi-Fiとモバイル通信でアップロードし、ご自身のiCloud容量を使用します。追加容量は含まれません。バックグラウンドの実行時期はiOSが決定します。別の端末を含め、復元は常に手動です。端末内の削除ではクラウドバックアップは削除されません。状態に異常がある場合、既存データを保護するため転送を停止することがあります。自動的な端末間同期ではありません。</p>"
+        },
+        {
+          "heading": "AI処理キュー",
+          "html": "<p>確認済みのAIタスクを一件ずつ実行し、最大10件を待機できます。保存済み録音のAI処理中も録音できますが、リソース制限によってAIが一時停止する場合があります。アプリを再度開いた後、停止中のキューは手動で再開してください。キャンセルしても送信済みデータや発生した料金は取り消せません。保存済みの進捗と原文は保持されます。再試行前に状態を確認してください。</p>"
+        }
+      ]
+    }
+  }
+}

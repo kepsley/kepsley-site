@@ -14,6 +14,7 @@ Only `site/` is published. Never add App source, models, private recordings, API
 
 ```sh
 python3 scripts/build_home.py  # after editing localized homepage copy
+python3 scripts/build_documents.py  # after editing document copy or layout
 python3 scripts/check_site.py
 python3 -m http.server 8771 --bind 127.0.0.1 --directory site
 ```
@@ -37,3 +38,9 @@ The three homepages are generated at authoring time by `scripts/build_home.py`. 
 The 2026-11-14 design positions Kepsley as a personal memory butler. The final palette follows user feedback: deep navy, ice-blue text and cyan accents. All scenes and illustrations are original, explicitly illustrative rather than customer records. `share.svg` is the source for the 1200×630 raster social preview.
 
 See `docs/homepage-2026-11-14.md` for validation and screenshots. Publishing still uses the existing GitHub Pages workflow.
+
+## Privacy and support pages
+
+The six localized documents use the same navy/cyan brand shell with a desktop table of contents and a collapsible mobile index. Their content source is `scripts/document_content.json`; `scripts/build_documents.py` renders the static pages. Update that content source deliberately when changing policy or help text. The visual refresh preserved every original paragraph in order.
+
+`documents.css` styles the new document layout. The original `style.css` remains available so cached copies of older HTML do not receive incompatible new layout rules. Homepage styles remain isolated in `home.css`. Verification: `docs/documents-2026-11-14.md`.

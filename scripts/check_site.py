@@ -52,7 +52,12 @@ for page,doc in parsed.items():
         assert not any(term in html.lower() for term in ['testflight.apple.com','apps.apple.com','<form','<iframe']),page
         assert 'home.css' in html and 'style.css' not in html,page
     else:
-        assert 'iCloud' in html and 'style.css' in html and 'home.css' not in html,page
+        assert 'iCloud' in html and 'documents.css' in html and 'home.css' not in html,page
+        assert {'top','main','section-01','heading-01','contact-title'}.issubset(doc.ids),page
+        assert doc.meta.get('description') and doc.meta.get('og:url'),page
+        assert any(a.get('rel')=='canonical' and a.get('href')==doc.meta['og:url'] for a in doc.rels),page
+        assert {a.get('hreflang') for a in doc.rels if a.get('rel')=='alternate'}=={'en','zh-Hans','ja','x-default'},page
+        assert 'mailto:otsgame@yahoo.com' in doc.links,page
     for link in doc.links:
         parts=urlsplit(link)
         if parts.scheme or parts.netloc:continue
@@ -73,4 +78,5 @@ for file in ROOT.rglob('*'):
             assert not any(k.startswith('on') for k in element.attrib),file
 assert (ROOT/'assets/share.png').is_file(),'Missing raster share image'
 subprocess.run([sys.executable,str(Path(__file__).with_name('build_home.py')),'--check'],check=True)
+subprocess.run([sys.executable,str(Path(__file__).with_name('build_documents.py')),'--check'],check=True)
 print('PASS: nine pages; three brand homes; SEO metadata; anchors; local links; static public assets')
