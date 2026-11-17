@@ -33,7 +33,7 @@ The source baseline was read from Linso-site. That repository, its workflow, Pag
 
 ## Brand homepage
 
-The three homepages are generated at authoring time by `scripts/build_home.py`. Edit the localized content there and regenerate; the public site remains static HTML/CSS/SVG with no JavaScript, external fonts, analytics, forms or app-download calls to action. `home.css` is isolated from the privacy/support stylesheet.
+The three homepages are generated at authoring time by `scripts/build_home.py`. Edit the localized content there and regenerate; the public site remains static HTML/CSS/SVG with no JavaScript, external fonts, analytics or forms. Each homepage keeps its introduction button and offers a secondary iOS download link to `https://apps.apple.com/app/id6817633126`, without a fixed storefront or language parameter. `home.css` is isolated from the privacy/support stylesheet.
 
 The 2026-11-14 design positions Kepsley as a personal memory butler. The final palette follows user feedback: deep navy, ice-blue text and cyan accents. All scenes and illustrations are original, explicitly illustrative rather than customer records. `share.svg` is the source for the 1200×630 raster social preview.
 

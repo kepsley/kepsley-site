@@ -10,9 +10,10 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1] / 'site'
 class Page(HTMLParser):
     def __init__(self):
-        super().__init__(); self.links=[]; self.lang=None; self.meta={}; self.rels=[]; self.ids=set(); self.h1=0; self.scripts=0; self.images=[]; self.events=[]
+        super().__init__(); self.links=[]; self.anchors=[]; self.lang=None; self.meta={}; self.rels=[]; self.ids=set(); self.h1=0; self.scripts=0; self.images=[]; self.events=[]
     def handle_starttag(self, tag, attrs):
         a=dict(attrs)
+        if tag=='a':self.anchors.append(a)
         if tag=='html':self.lang=a.get('lang')
         if tag=='meta':self.meta[a.get('name',a.get('property',''))]=a.get('content','')
         if tag=='link':self.rels.append(a)
@@ -49,7 +50,12 @@ for page,doc in parsed.items():
         assert {a.get('hreflang') for a in doc.rels if a.get('rel')=='alternate'}=={'en','zh-Hans','ja','x-default'},page
         assert {'main','how','moments','about'}.issubset(doc.ids),page
         assert all('alt' in image and 'width' in image and 'height' in image for image in doc.images),page
-        assert not any(term in html.lower() for term in ['testflight.apple.com','apps.apple.com','<form','<iframe']),page
+        assert not any(term in html.lower() for term in ['testflight.apple.com','<form','<iframe']),page
+        downloads=[a for a in doc.anchors if 'download-link' in a.get('class','').split()]
+        assert len(downloads)==1 and downloads[0].get('href')=='https://apps.apple.com/app/id6817633126',page
+        assert downloads[0].get('target','_self')=='_self',page
+        assert [link for link in doc.links if urlsplit(link).hostname=='apps.apple.com']==['https://apps.apple.com/app/id6817633126'],page
+        assert any(a.get('class')=='primary-link' and a.get('href')=='#how' for a in doc.anchors),page
         assert 'home.css' in html and 'style.css' not in html,page
     else:
         assert 'iCloud' in html and 'documents.css' in html and 'home.css' not in html,page
